@@ -11,6 +11,8 @@ namespace Core.JSONSaveLoadSystem
         public SettingsData Settings = new();
         public CurrencyData Balance = new();
         public List<BuildingSlotSave> BuildingSlots = new();
+        public List<UpgradeSaveData> Upgrades = new();
+        public List<InventoryEntry> Inventory = new();
     }
     
     [Serializable]
@@ -34,5 +36,19 @@ namespace Core.JSONSaveLoadSystem
         public int slotId;
         public int buildingId;  // 0 или -1 = пусто
         public int buildTier;
+    }
+    
+    [Serializable]
+    public class UpgradeSaveData
+    {
+        public int id;
+        public int tier;
+    }
+    
+    [System.Serializable]
+    public class InventoryEntry
+    {
+        public int itemId;
+        public int count;
     }
 }

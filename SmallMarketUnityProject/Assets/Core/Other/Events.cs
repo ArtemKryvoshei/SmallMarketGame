@@ -25,4 +25,6 @@ namespace Core.Other
         public GameObject clickedObject;
         public CursorType clickType;
     }
+
+    public struct OnInventoryChanged { }
 }

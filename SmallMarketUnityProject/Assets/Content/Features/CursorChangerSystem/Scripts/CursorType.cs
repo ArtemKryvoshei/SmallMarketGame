@@ -6,6 +6,7 @@
         Build,
         Upgrade,
         Craft,
-        NPCInteract
+        NPCInteract,
+        ItemPickup
     }
 }

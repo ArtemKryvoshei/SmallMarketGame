@@ -18,7 +18,6 @@ namespace Content.Features.NPCLogic.Scripts
             customer.buyTimer -= Time.deltaTime;
             if (customer.buyTimer <= 0)
             {
-                // Ищем кассу
                 var cashiers = Object.FindObjectsOfType<CashierPoint>();
                 if (cashiers.Length > 0)
                 {

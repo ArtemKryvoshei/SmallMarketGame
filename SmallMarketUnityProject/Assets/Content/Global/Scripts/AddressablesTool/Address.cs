@@ -19,6 +19,13 @@ namespace AddressablesGenerated
             public const string CostPresetUI = "CostPresetUI";
             public const string RewardPresetUI = "RewardPresetUI";
             public const string CashRegisterUpgradePreset = "CashRegisterUpgradePreset";
+            public const string GoodsDisplayUpgradePreset = "GoodsDisplayUpgradePreset";
+            public const string CustomersCountUpgradePreset = "CustomersCountUpgradePreset";
+            public const string SpawnIntervalUpgradePreset = "SpawnIntervalUpgradePreset";
+            public const string UIInventoryItem = "UIInventoryItem";
+            public const string CraftReward = "CraftReward";
+            public const string CraftIngredient = "CraftIngredient";
+            public const string RecipeView = "RecipeView";
         }
         public static class Gameplay
         {
@@ -27,6 +34,9 @@ namespace AddressablesGenerated
             public const string Building_Fastfood = "Building_Fastfood";
             public const string Building_Freezer = "Building_Freezer";
             public const string NPC_Customer = "NPC_Customer";
+            public const string FoodDrop_Meat = "FoodDrop_Meat";
+            public const string FoodDrop_PeanutButter = "FoodDrop_PeanutButter";
+            public const string FoodDrop_Soda = "FoodDrop_Soda";
         }
     }
 }

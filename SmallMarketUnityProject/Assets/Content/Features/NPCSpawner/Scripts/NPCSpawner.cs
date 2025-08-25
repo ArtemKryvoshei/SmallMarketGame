@@ -3,7 +3,9 @@ using UnityEngine;
 using System.Threading.Tasks;
 using AddressablesGenerated;
 using Content.Features.UpgradeSystem.Scripts;
+using Core.EventBus;
 using Core.IInitializeQueue;
+using Core.JSONSaveLoadSystem;
 using Core.Other;
 using Core.PrefabFactory;
 using Core.ServiceLocatorSystem;
@@ -20,26 +22,31 @@ namespace Content.Features.NPCSpawner.Scripts
 {
     public class NPCSpawner : InitializeableMonoComponent, IUpgradeable
     {
+        [Header("Save Settings")]
+        [SerializeField] private int saveId;
+        
         [Header("Spawner Settings")]
         [SerializeField] private Transform spawnPoint;
-        [SerializeField] private float spawnInterval = 5f;
-        [SerializeField] private int maxCustomers = 5;
         
         [Header("Upgrade Settings")]
         [SerializeField] private UpgradeData upgradeData;
         [SerializeField] private Transform upgradeWindowAnchor;
         [SerializeField] private TierRewardBonusSpawner[] spawnerSettingsByTier;
         
-        private IPrefabFactory _prefabFactory;
         private readonly Dictionary<int, CustomerNPC> _customers = new();
         private float _timer;
         private int _idCounter = 0;
-        
         private int _currentTier = 1;
+        private float spawnInterval;
+        private int maxCustomers;
         
-        public UpgradeData GetUpgradeData() => upgradeData;
         public int GetCurrentTier() => _currentTier;
+        private IPrefabFactory _prefabFactory;
+        public UpgradeData GetUpgradeData() => upgradeData;
         public Transform GetMenuAnchor() => upgradeWindowAnchor;
+        
+        private ISaveLoadSystem _saveLoadSystem;
+        private IEventBus _eventBus;
         
         public void UpgradeToTier(int newTier)
         {
@@ -49,6 +56,7 @@ namespace Content.Features.NPCSpawner.Scripts
             ApplyTierSettings();
 
             Debug.Log($"[NPCSpawner] Upgraded to tier {_currentTier}, spawnInterval={spawnInterval}, maxCustomers={maxCustomers}");
+            SaveTier();
         }
 
         private void ApplyTierSettings()
@@ -73,9 +81,13 @@ namespace Content.Features.NPCSpawner.Scripts
         public override void Initialize()
         {
             _prefabFactory = ServiceLocator.Get<IPrefabFactory>();
+            _saveLoadSystem = ServiceLocator.Get<ISaveLoadSystem>();
+            _eventBus = ServiceLocator.Get<IEventBus>();
             ApplyTierSettings();
             base.Initialize();
             initialized = true;
+            _eventBus.Subscribe<OnAutosaveCall>(_ => SaveTier());
+            LoadTier();
         }
         
         private void Update()
@@ -130,5 +142,46 @@ namespace Content.Features.NPCSpawner.Scripts
             _customers.Clear();
             Debug.Log("[NPCSpawner] All customers released");
         }
+        
+        private void OnDestroy()
+        {
+            _eventBus.Unsubscribe<OnAutosaveCall>(_ => SaveTier());
+        }
+        
+        private void SaveTier()
+        {
+            var data = _saveLoadSystem.Load();
+            var saved = data.Upgrades.Find(u => u.id == saveId);
+            if (saved != null)
+            {
+                saved.tier = _currentTier;
+            }
+            else
+            {
+                data.Upgrades.Add(new UpgradeSaveData
+                {
+                    id = saveId,
+                    tier = _currentTier
+                });
+            }
+            _saveLoadSystem.Save(data);
+        }
+
+        private void LoadTier()
+        {
+            var data = _saveLoadSystem.Load();
+            var saved = data.Upgrades.Find(u => u.id == saveId);
+            if (saved != null)
+            {
+                _currentTier = saved.tier;
+                ApplyTierSettings();
+                Debug.Log($"[NPCSpawner] Loaded tier {_currentTier}, spawnInterval={spawnInterval}, maxCustomers={maxCustomers}");
+            }
+            else
+            {
+                ApplyTierSettings();
+            }
+        }
+
     }
 }

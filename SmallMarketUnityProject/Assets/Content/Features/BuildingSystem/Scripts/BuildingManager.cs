@@ -61,6 +61,7 @@ namespace Content.Features.BuildingSystem.Scripts
             
             ProductStand productStand = building.gameObject.GetComponent<ProductStand>();
             productStand?.SetSellableData(data.sellableObject);
+            productStand?.SetSaveId(slot.Id);
             
             slot.SetSpawned(building);
             slot.AssignBuilding(data.id);
@@ -105,6 +106,7 @@ namespace Content.Features.BuildingSystem.Scripts
                         slot.AssignBuilding(data.id);
                         ProductStand productStand = building.gameObject.GetComponent<ProductStand>();
                         productStand?.SetSellableData(data.sellableObject);
+                        productStand?.SetSaveId(slot.Id);
                     }
                     else
                     {

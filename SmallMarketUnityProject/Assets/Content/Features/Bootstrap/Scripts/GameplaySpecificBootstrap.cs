@@ -3,6 +3,7 @@ using AddressablesGenerated;
 using Content.Features.AutosaveTimer;
 using Content.Features.BuildingSystem.Scripts;
 using Content.Features.ClickDetector.Scripts;
+using Content.Features.CraftSystem.Scripts;
 using Content.Features.UpgradeSystem.Scripts;
 using Core.IInitializeQueue;
 using Core.Other;
@@ -15,6 +16,7 @@ namespace Content.Features.Bootstrap.Scripts
     public class GameplaySpecificBootstrap : InitializeableMonoComponent
     {
         [SerializeField] private BuildingManager buildingManager;
+        [SerializeField] private InventorySystem inventorySystem;
         [SerializeField] private ComponentsInitializeManager componentsInitManager;
         private IPrefabFactory factory;
 
@@ -35,6 +37,7 @@ namespace Content.Features.Bootstrap.Scripts
             ServiceLocator.Register<UpgradeManager>(upgradeManager);
             
             ServiceLocator.Register<BuildingManager>(buildingManager);
+            ServiceLocator.Register<InventorySystem>(inventorySystem);
             
             base.Initialize();
             clickManager.Initialize();

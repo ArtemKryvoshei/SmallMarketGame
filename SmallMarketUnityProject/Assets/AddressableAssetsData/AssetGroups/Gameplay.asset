@@ -42,6 +42,21 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ba6a0657d0433274c8a8e44987fb478c
+    m_Address: FoodDrop_Meat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2b6b9a40a948f604890a9ee484ea1319
+    m_Address: FoodDrop_PeanutButter
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 34b62862bd4aa1c468b8edf26f427563
+    m_Address: FoodDrop_Soda
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: c8f348b1e9c2bc347a756e037ba01c28, type: 2}
   m_SchemaSet:

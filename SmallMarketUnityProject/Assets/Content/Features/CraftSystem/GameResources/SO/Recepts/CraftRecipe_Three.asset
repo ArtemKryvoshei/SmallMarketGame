@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 020544e1d58e4108b944ff4c2f48e0da, type: 3}
+  m_Name: CraftRecipe_Three
+  m_EditorClassIdentifier: 
+  recipeId: 5001
+  recipeName: Recept One
+  ingredients:
+  - itemData: {fileID: 11400000, guid: 2b27a4e922c5c55419a42ebd50243ee5, type: 2}
+    count: 2
+  - itemData: {fileID: 11400000, guid: 8373bf01eb932f4459c990a04bd10646, type: 2}
+    count: 2
+  - itemData: {fileID: 11400000, guid: ac6089a5bf01b7a4fb8816c907e9cdc4, type: 2}
+    count: 2
+  rewards:
+  - resourceType: 0
+    amount: 60

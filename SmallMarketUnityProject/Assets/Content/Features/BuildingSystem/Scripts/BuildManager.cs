@@ -60,13 +60,24 @@ namespace Content.Features.BuildingSystem.Scripts
             base.Initialize();
         }
         
+        private void OnDisable()
+        {
+            HideMenu(); 
+        }
+        
         private void OnDestroy()
         {
-            _eventBus.Unsubscribe<OnObjectClicked>(HandleObjectClicked);
+            if (_eventBus != null)
+                _eventBus.Unsubscribe<OnObjectClicked>(HandleObjectClicked);
+
+            _currentPlatform = null;
         }
         
         private void HandleObjectClicked(OnObjectClicked evt)
         {
+            if (this == null || gameObject == null || gameObject.Equals(null))
+                return;
+            
             if (evt.clickedObject == null)
             {
                 HideMenu();
