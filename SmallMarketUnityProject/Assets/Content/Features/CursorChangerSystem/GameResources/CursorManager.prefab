@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2844804182741467824
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7624790803721317433}
+  - component: {fileID: 9205449741204050638}
+  m_Layer: 0
+  m_Name: CursorManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 2800000, guid: c4f4d52d86731a844a9528726ad1fc13, type: 3}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7624790803721317433
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2844804182741467824}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9205449741204050638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2844804182741467824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25d118b8253b4d9dac7bf0a572bed490, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  cursorDataList:
+  - Type: 0
+    Texture: {fileID: 2800000, guid: 656bc18d47d226a40bda4a09a6be6b8a, type: 3}
+    Hotspot: {x: 0, y: 0}
+  - Type: 1
+    Texture: {fileID: 2800000, guid: 12ede4d5ae4478e478664d06ea2b8e6a, type: 3}
+    Hotspot: {x: 0, y: 0}
+  - Type: 2
+    Texture: {fileID: 2800000, guid: 7ecdcbf7c3dc5894a985d455d86a37d1, type: 3}
+    Hotspot: {x: 0, y: 0}
+  - Type: 3
+    Texture: {fileID: 2800000, guid: 989210b9098e12c4f9b47382644f7343, type: 3}
+    Hotspot: {x: 0, y: 0}
+  - Type: 4
+    Texture: {fileID: 2800000, guid: e89de8d45f3d2ff4ab832db02efb00b1, type: 3}
+    Hotspot: {x: 0, y: 0}
+  - Type: 5
+    Texture: {fileID: 2800000, guid: 3c931b17bf2a028478bc8f89763a9e17, type: 3}
+    Hotspot: {x: 0, y: 0}

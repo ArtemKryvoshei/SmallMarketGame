@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Gameplay
+  m_EditorClassIdentifier: 
+  m_GroupName: Gameplay
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 8ab12d8d0632247499b5a4fb8e13b7ca
+  m_SerializeEntries:
+  - m_GUID: ee25472b74c77c745ac99ff73a3bc06d
+    m_Address: BuildPlatform
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3c6ea7b152baee648960f596184547bb
+    m_Address: Building_Bread
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 901055bc31196254b9d3307c774dd114
+    m_Address: Building_Fastfood
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a607bd84f59805c41a477de62e94941b
+    m_Address: Building_Freezer
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2fef5a3e1b7eba44693caee6a0eb174e
+    m_Address: NPC_Customer
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ba6a0657d0433274c8a8e44987fb478c
+    m_Address: FoodDrop_Meat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2b6b9a40a948f604890a9ee484ea1319
+    m_Address: FoodDrop_PeanutButter
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 34b62862bd4aa1c468b8edf26f427563
+    m_Address: FoodDrop_Soda
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: c8f348b1e9c2bc347a756e037ba01c28, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 1dcecf02eb59c03498dc20809ff6abb0, type: 2}
+    - {fileID: 11400000, guid: 0b8e0e9d022c4804394860763c45b71d, type: 2}

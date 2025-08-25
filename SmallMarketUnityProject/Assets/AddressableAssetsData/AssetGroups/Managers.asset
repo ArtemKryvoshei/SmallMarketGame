@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Managers
+  m_EditorClassIdentifier: 
+  m_GroupName: Managers
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 9f4661c4b62d3d845b048e8cbcf2b7b9
+  m_SerializeEntries:
+  - m_GUID: 72dbd73efa23776439edec9fe020fa52
+    m_Address: AudioManager
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 707f4e6d94661894db262e3b416c6c37
+    m_Address: AutosaveManager
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cc19c0e73ba30da498e9da1437c06669
+    m_Address: CurrencyService
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 127d723083039ec479ce18426078132e
+    m_Address: CursorManager
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5c47b807725ff6544af8d168c7dd960a
+    m_Address: ClickManager
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c171425cd95f49a45a0847d6a6dbd16b
+    m_Address: BuildManager
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2bd857b6666544244bc5c547ba01602c
+    m_Address: UpgradeManager
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: c8f348b1e9c2bc347a756e037ba01c28, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: d4c3cea23ef4f524692b43ad32afb3f1, type: 2}
+    - {fileID: 11400000, guid: 99d2d8d3d22916442a4f356f76e7c93b, type: 2}

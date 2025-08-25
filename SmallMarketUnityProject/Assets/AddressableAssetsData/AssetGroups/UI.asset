@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: UI
+  m_EditorClassIdentifier: 
+  m_GroupName: UI
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 3c9c81f0a2e23a647a5ddb6cc1660c95
+  m_SerializeEntries:
+  - m_GUID: 2fb36575c0ede2742b353a807bc03fa4
+    m_Address: LoadingScreen
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 16e98fe2dfd1559458b97ab3e01305ba
+    m_Address: CostPresetUI
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2e879eb2c805132409f67fae5778759a
+    m_Address: RewardPresetUI
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c54a738aaeeb2d645b8a5ebeb80277aa
+    m_Address: CashRegisterUpgradePreset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 800e81dc14dd71a479cfa308d0bb5222
+    m_Address: GoodsDisplayUpgradePreset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e17dd50d42f559449a56487c7b762fd3
+    m_Address: CustomersCountUpgradePreset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fbaf073eaff9e94468cffcf9beb5228f
+    m_Address: SpawnIntervalUpgradePreset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2985691dbc5c9b2438540a4c0d13100d
+    m_Address: UIInventoryItem
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 41b43b62ace90a6499c1b3795de70ccc
+    m_Address: CraftReward
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2d5aae120e3925c458220dce8850008a
+    m_Address: CraftIngredient
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ea382dd5abfd230468800c3acf77236d
+    m_Address: RecipeView
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: c8f348b1e9c2bc347a756e037ba01c28, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 8395309d3ab6b184584455869be5412e, type: 2}
+    - {fileID: 11400000, guid: fd5f4109ed2d56a478a24c0ba051600d, type: 2}
