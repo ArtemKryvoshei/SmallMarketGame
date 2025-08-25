@@ -114,8 +114,7 @@ namespace Content.Features.BuildingSystem.Scripts
             // отпускаем NPC
             if (_currentCustomer != null)
             {
-                _currentCustomer.Release();
-                Destroy(_currentCustomer.gameObject);
+                _currentCustomer.ChangeState(new ExitState());
             }
 
             if (progressBar != null)

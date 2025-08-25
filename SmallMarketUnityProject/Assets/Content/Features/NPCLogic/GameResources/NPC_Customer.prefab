@@ -82,6 +82,18 @@ MonoBehaviour:
       type: 3}
     headMesh: {fileID: -1793059242609255079, guid: 5a50dc06d1c0b784e9c271eb30392593,
       type: 3}
+  - bodyMesh: {fileID: 988656143610355917, guid: e3232fc1f4082e443b04bc8620ea5563,
+      type: 3}
+    headMesh: {fileID: -1793059242609255079, guid: e3232fc1f4082e443b04bc8620ea5563,
+      type: 3}
+  - bodyMesh: {fileID: 988656143610355917, guid: 4856c12665a47714e85130d142c2a90b,
+      type: 3}
+    headMesh: {fileID: -1793059242609255079, guid: 4856c12665a47714e85130d142c2a90b,
+      type: 3}
+  - bodyMesh: {fileID: 988656143610355917, guid: 2c69f80a2d268da4c967b1b2f65f0c81,
+      type: 3}
+    headMesh: {fileID: -1793059242609255079, guid: 2c69f80a2d268da4c967b1b2f65f0c81,
+      type: 3}
 --- !u!1 &9047389715354964047
 GameObject:
   m_ObjectHideFlags: 0
